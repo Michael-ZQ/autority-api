@@ -1,5 +1,5 @@
 export const up = async (queryInterface, Sequelize) => {
-  await queryInterface.createTable('tasks', {
+  await queryInterface.createTable('todo', {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
@@ -39,4 +39,4 @@ export const up = async (queryInterface, Sequelize) => {
   });
 };
 
-export const down = (queryInterface) => queryInterface.dropTable('tasks');
+export const down = (queryInterface) => queryInterface.dropTable('todo');

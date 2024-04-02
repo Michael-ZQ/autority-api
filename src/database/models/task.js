@@ -37,6 +37,7 @@ export default function (sequelize) {
     },
   }, {
     sequelize,
+    tableName: 'todo',
     modelName: 'task',
     timestamps: true, // Enable createdAt and updatedAt fields
     paranoid: true, // Enable deletedAt field (soft delete)
